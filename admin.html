@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Sidebar -->
+    <div class="flex">
+        <nav class="w-64 bg-gray-800 text-white min-h-screen p-4">
+            <h1 class="text-2xl font-bold mb-6">Admin Panel</h1>
+            <ul class="space-y-4">
+                <li><a href="/index.html" class="hover:bg-gray-700 p-2 rounded">Home</a></li>
+                <li><a href="" class="hover:bg-gray-700 p-2 rounded">Users</a></li>
+                <li><a href="" class="hover:bg-gray-700 p-2 rounded">Settings</a></li>
+                <li><a href="" class="hover:bg-gray-700 p-2 rounded">Reports</a></li>
+                <li><a href="/signin.html" class="hover:bg-gray-700 p-2 rounded" style="background-color: #f44336; color: white;">Logout</a></li>
+
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-8">
+            <h2 class="text-3xl font-bold mb-4">Dashboard</h2>
+            <p class="mb-4">Welcome to the admin dashboard! Here you can manage your application.</p>
+            
+            <div class="grid grid-cols-3 gap-4">
+                <div class="bg-white shadow rounded-lg p-4">
+                    <h3 class="font-bold text-xl mb-2">Total Users</h3>
+                    <p class="text-2xl">150</p>
+                </div>
+                <div class="bg-white shadow rounded-lg p-4">
+                    <h3 class="font-bold text-xl mb-2">New Signups</h3>
+                    <p class="text-2xl">25</p>
+                </div>
+                <div class="bg-white shadow rounded-lg p-4">
+                    <h3 class="font-bold text-xl mb-2">Pending Requests</h3>
+                    <p class="text-2xl">5</p>
+                </div>
+            </div>
+
+            <div class="mt-8">
+                <h3 class="font-bold text-xl mb-2">Recent Activity</h3>
+                <table class="min-w-full bg-white shadow rounded-lg">
+                    <thead>
+                        <tr class="bg-gray-200">
+                            <th class="py-2 px-4 border-b">User</th>
+                            <th class="py-2 px-4 border-b">Action</th>
+                            <th class="py-2 px-4 border-b">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4 border-b">John Doe</td>
+                            <td class="py-2 px-4 border-b">Signed Up</td>
+                            <td class="py-2 px-4 border-b">2024-10-10</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Jane Smith</td>
+                            <td class="py-2 px-4 border-b">Logged In</td>
+                            <td class="py-2 px-4 border-b">2024-10-11</td>
+                        </tr>
+                        <tr>
+                            <td class="py-2 px-4 border-b">Alice Johnson</td>
+                            <td class="py-2 px-4 border-b">Updated Profile</td>
+                            <td class="py-2 px-4 border-b">2024-10-12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

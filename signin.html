@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-900">
+
+		<!-- Header Section -->
+		<header class="bg-gray-800 py-4">
+			<div class="container mx-auto flex items-center px-4">
+				<a href="/index.html" class="text-2xl font-bold text-white ">Logo</a>
+				<div class="flex-grow mx-4">
+					<input type="text" style="width: 600px;" class="py-2 px-4 rounded-[8px] bg-gray-200 text-gray-800" placeholder="Search">
+				</div>
+				<div id="datetime" class="text-white mx-4"></div>
+				<div class="mx-4"></div> <!-- Space between date and nav items -->
+				<nav class="space-x-4">
+					<a href="/about.html" class="text-white">About</a>
+					<a href="/license.html" class="text-white">License</a>
+					<a href="/blog.html" class="text-white">Blog</a>
+					<a href="/community.html" class="text-white">Community</a>
+					<a href="/signin.html" class="text-white bg-blue-600 py-1 px-3 rounded hover:bg-blue-500 transition">Sign in</a> <!-- Sign in button -->
+				</nav>
+			</div>
+		</header>
+
+    <!-- Sign In Form -->
+    <div class="flex items-center justify-center min-h-screen">
+        <div class="w-full max-w-md bg-gray-800 shadow-md rounded-lg p-8">
+            <h2 class="text-2xl font-bold text-center text-white mb-6">Sign In</h2>
+
+            <form>
+                <div class="mb-4">
+                    <label for="email" class="block text-sm font-medium text-gray-300">Email</label>
+                    <input type="email" id="email" name="email" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500" placeholder="you@example.com">
+                </div>
+
+                <div class="mb-6">
+                    <label for="password" class="block text-sm font-medium text-gray-300">Password</label>
+                    <input type="password" id="password" name="password" required class="mt-1 block w-full px-3 py-2 border border-gray-600 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500" placeholder="********">
+                </div>
+
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-2 rounded-md hover:bg-blue-500 transition">Sign In</button>
+            </form>
+
+            <div class="mt-6 text-center">
+                <p class="text-sm text-gray-400">Don't have an account? <a href="/registration.html" class="text-blue-400 hover:underline">Sign up</a></p>
+                <a href="/admin.html" style="text-decoration: none;">
+                    <button style="background-color: #5f4abb; color: white; padding: 10px 20px; margin-top: 20px; border: none; border-radius: 5px; cursor: pointer;">Admin</button>
+                  </a>
+                  <a href="/user-dashboard.html" style="text-decoration: none;">
+                    <button style="background-color: #cc43a3d3; color: white; padding: 10px 20px;margin-top: 20px; border: none; border-radius: 5px; cursor: pointer;">User</button>
+                  </a>
+                  
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
